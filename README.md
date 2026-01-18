@@ -1,16 +1,21 @@
-## Hi there 👋
+# Hi, I'm Neema 👋
 
-<!--
-**Bk-004/BK-004** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Frontend developer in training, focused on building clean, accessible, and well-structured web interfaces.
 
-Here are some ideas to get you started:
+## What I’m learning
+- Semantic HTML5
+- Modern CSS (Flexbox, Grid, Responsive Design)
+- JavaScript (ES6+)
+- TypeScript
+- React & Tailwind CSS
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## How I work
+- I focus on understanding fundamentals before frameworks
+- I write clean, readable, and maintainable code
+- I learn through practice and daily consistency
+
+## Current goal
+Become a professional frontend developer capable of working in real-world production environments.
+
+## Let’s connect
+- GitHub: here 
