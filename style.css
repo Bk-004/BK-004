@@ -1,10 +1,21 @@
 /* Reset simple */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color:#f5f7fa;
-    color: #1a1a1a;
+    color: #222;
 }
 
 /* Listes */ 
@@ -23,17 +34,9 @@ a{
 /* Navigation */
 header {
     background-color: #ffffff;
-    padding: 0.5em;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgb (0,0,0,0.05);
     
-}
-
-header h1{
-    margin: 0;
-    color: #3e98f8;
-    font-family: "Edu VIC WA NT Hand Pre", cursive;
-    font-weight: bold;
-    font-size: 3em;
-    padding-left: 1em;
 }
 
 nav{
@@ -42,44 +45,41 @@ nav{
     align-items: center;
 }
 
-nav ul{
+.logo{
+    margin: 0;
+    color: #3e98f8;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.logo span{
+    color: #000000;
+    font-size: 0.8em;
+}
+
+.nav-links{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0;
     margin: 0;
     padding-right: 4em;
 }
 
-nav a{
-    color: #000;
-    font-weight: bold;
+.nav-links a{
+    color: #333;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
-nav a:hover{
-    color: #4da3ff;
+.nav-links a:hover{
+    color: #2b6cb0;
 }
-
-.hero{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.hero h2{
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.hero p{
-    font-size: 1.2em;
-    color: #444444;
-}
-
 
 /* sections */
 section{
-    padding: 80px 20px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: auto;
 }
@@ -88,6 +88,40 @@ section:nth-child(3){
     background: linear-gradient(90deg, #70b4fd,  #f0f4f8); 
     border-radius: 10px;
     color: #000000;
+}
+
+/* hero section */
+.hero{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-text p{
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn{
+    background: #3e98f8;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: #2b6cb0;
 }
 
 
