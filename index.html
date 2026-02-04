@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Neema — Portfolio (Purple)</title>
+
+  <!-- Google Font moderne -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll-driven decorative shapes -->
+  <div class="scroll-shapes">
+    <div class="scroll-shape shape-line-1"></div>
+    <div class="scroll-shape shape-line-2"></div>
+    <div class="scroll-shape shape-line-3"></div>
+    <div class="scroll-shape shape-circle-1"></div>
+    <div class="scroll-shape shape-circle-2"></div>
+    <div class="scroll-shape shape-circle-3"></div>
+    <div class="scroll-shape shape-rect-1"></div>
+    <div class="scroll-shape shape-rect-2"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html">Neema<span class="dot">.</span>dev</a>
+      
+      <!-- Theme toggle button (dark/light mode) -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark/Light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      
+      <!-- Bouton hamburger pour mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Navigation (desktop + mobile) -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero : grande bannière avec gradient linéaire violet -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="reveal">Bonjour, je suis <strong class="gradient-text">Neema</strong></h1>
+        <p class="lead reveal">Front‑end Developer créative & passionnée — je transforme des idées en interfaces web claires, modernes et accessibles.</p>
+        <!-- Pitch court orienté recruteur -->
+        <p class="highlight reveal"><i class="fas fa-rocket"></i> Disponible immédiatement pour stage/junior — je livre du code propre, performant et prêt pour la production.</p>
+
+        <p class="cta-row reveal">
+          <a class="btn" href="#projects"><i class="fas fa-briefcase"></i> Voir mes projets</a>
+          <a class="btn" href="cv.pdf" download><i class="fas fa-download"></i> Télécharger CV</a>
+          <a class="btn btn-ghost" href="#contact"><i class="fas fa-envelope"></i> Me contacter</a>
+        </p>
+
+        <!-- Liens sociaux visibles pour recruteurs -->
+        <p class="socials-line reveal">
+          <a href="https://www.instagram.com/bkgracia_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/neema-banza-614a172a5" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/bk-004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </p>
+      </div>
+
+      <!-- Carte de profil animée avec halo et pulse -->
+      <aside class="hero-right profile-card-wrapper" aria-hidden="true">
+        <div class="profile-card-halo"></div>
+        <div class="profile-card">
+          <img src="images/BG.png" alt="Photo de Neema" class="profile-image">
+          <div class="profile-meta">
+            <h3>Neema B.K</h3>
+            <p><span class="status-dot"></span> Available now</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Section À propos : court et centré -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <!-- Colonne principale : résumé professionnel + compétences -->
+      <div>
+        <h2>Front‑end Developer</h2>
+
+        <!-- Résumé court et orienté produit, utile pour recruteurs -->
+        <p>
+          Je crée des interfaces web soignées, accessibles et performantes. Je combine sens du design, bonnes pratiques HTML/CSS
+          et JavaScript moderne pour livrer des expériences utilisateur claires et mesurables.
+        </p>
+
+        <!-- Liste de propositions de valeur (what I bring) -->
+        <ul class="skills">
+          <li><i class="fas fa-check-circle"></i> Design centré utilisateur & responsive-first</li>
+          <li><i class="fas fa-check-circle"></i> Code propre, réutilisable et maintenable</li>
+          <li><i class="fas fa-check-circle"></i> Performance et accessibilité intégrées dès la conception</li>
+        </ul>
+
+        <!-- Petits metrics pour crédibilité -->
+        <div class="metrics" aria-hidden="true" style="display:flex;gap:14px;margin-top:12px">
+          <div class="metric card" style="padding:12px;border-radius:8px;text-align:center">
+            <div style="font-size:1.25rem;color:var(--accent);font-weight:700">95%</div>
+            <div style="font-size:.85rem;color:var(--muted)">HTML/CSS</div>
+          </div>
+          <div class="metric card" style="padding:12px;border-radius:8px;text-align:center">
+            <div style="font-size:1.25rem;color:var(--accent);font-weight:700">50%</div>
+            <div style="font-size:.85rem;color:var(--muted)">JavaScript</div>
+          </div>
+          <div class="metric card" style="padding:12px;border-radius:8px;text-align:center">
+            <div style="font-size:1.25rem;color:var(--accent);font-weight:700">A11y</div>
+            <div style="font-size:.85rem;color:var(--muted)">Contraste & navigation clavier</div>
+          </div>
+        </div>
+
+        <!-- Tech stack rapide (icônes) -->
+        <p style="margin-top:14px">Tech: <i class="fab fa-html5"></i> HTML • <i class="fab fa-css3-alt"></i> CSS • <i class="fab fa-js-square"></i> JS • <i class="fab fa-react"></i> React • <i class="fab fa-bootstrap"></i> Tailwind • <i class="fab fa-git-alt"></i> Git</p>
+
+        <!-- CTA clair pour recruteurs -->
+        <p style="margin-top:18px">
+          <a class="btn" href="cv.pdf" download><i class="fas fa-download"></i> Télécharger mon CV</a>
+          <a class="btn btn-ghost" href="#contact" style="margin-left:10px"><i class="fas fa-envelope"></i> Me contacter</a>
+        </p>
+      </div>
+
+      <!-- Colonne latérale : carte personnelle + contact détaillé -->
+      <aside class="card" style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0">Neema B.</h3>
+        <p style="margin:0;color:var(--muted)">Front‑end Developer — orientée produit</p>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.03);padding-top:12px">
+          <p style="margin:6px 0"><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
+          <p style="margin:6px 0"><i class="fas fa-clock"></i> Disponible — à partir de March 2026</p>
+          <p style="margin:6px 0"><i class="fas fa-language"></i> Français, Anglais</p>
+        </div>
+
+        <div style="margin-top:6px">
+          <a class="btn" href="https://www.linkedin.com/in/neema-banza-614a172a5" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <div style="margin-top:8px;font-size:.9rem;color:var(--muted)">
+          <strong>Contact:</strong>
+          <div><i class="fas fa-envelope"></i> <a href="mailto:banzakilubaneema@gmail.com">banzakilubaneema@gmail.com</a></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Section Projets : cartes simples, responsive -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projets récents</h2>
+      <div class="projects-grid">
+        <!-- Chaque 'article' représente un projet ; garder structure simple -->
+        <article class="project">
+          <div class="project-media"><i class="fas fa-folder-open fa-2x"></i></div>
+          <h3>Portfolio Personnel</h3>
+          <p>Site vitrine avec mes réalisations et mon CV.</p>
+          <p class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></p>
+        </article>
+
+        <article class="project">
+          <div class="project-media"><i class="fas fa-shopping-bag fa-2x"></i></div>
+          <h3>YUMEITO (e‑commerce)</h3>
+          <p>Mini boutique responsive pour produits faits main.</p>
+          <p class="project-tags"><span>Design</span><span>Responsive</span></p>
+        </article>
+
+        <article class="project">
+          <div class="project-media"><i class="fas fa-gem fa-2x"></i></div>
+          <h3>L'Or_design</h3>
+          <p>Landing page produit et galerie.</p>
+          <p class="project-tags"><span>UI</span><span>Accessibility</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact professionnel amélioré -->
+  <section id="contact" class="section section-contrast">
+    <div class="container grid-2">
+      <!-- Left: Formulaire accessible et simple -->
+      <div>
+        <h2>Contactez-moi</h2>
+        <p>Envie de collaborer ? Décrivez brièvement le poste ou le projet. Réponse sous 48h.</p>
+
+        <!-- Accessible form: labels, required, aria-live pour feedback -->
+        <form id="contactForm" class="contact-form" action="#" method="post" aria-label="Formulaire de contact">
+          <label for="name">Nom</label>
+          <input id="name" name="name" placeholder="Votre nom" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="votre@gmail.com" required>
+
+          <label for="role">Objet (recrutement / projet)</label>
+          <input id="role" name="role" placeholder="Ex: Offre junior / Projet freelance" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Décrivez en quelques lignes" required></textarea>
+
+          <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+            <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            <button class="btn btn-ghost" type="reset">Réinitialiser</button>
+            <div id="formStatus" aria-live="polite" style="margin-left:8px;color:var(--accent)"></div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: Cartes de contact et réseaux — utiles pour recruteurs -->
+      <aside>
+        <div class="card">
+          <h3>Contact rapide</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:banzakilubaneema@gmail.com">banzakilubaneema@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> Disponible sur demande</p>
+          <p><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Réseaux</h4>
+          <div class="socials-links">
+            <a href="https://www.instagram.com/bkgracia_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/neema-banza-614a172a5" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/bk-004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Recruteurs</h4>
+          <p>Je suis disponible pour des missions juniors, stages ou CDI junior. CV et portfolio prêts à partager.</p>
+          <div style="margin-top:14px">
+            <a class="btn" href="cv.pdf" download style="display:inline-flex;align-items:center;gap:8px;color:white"><i class="fas fa-download" ></i> Télécharger CV</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Small inline script to simulate submission and display feedback -->
+    <script>
+      (function(){
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          // Simple client-side validation (already handled by required)
+          status.textContent = 'Envoi en cours…';
+          // Simulate network delay
+          setTimeout(()=>{
+            status.textContent = 'Message envoyé — merci ! Je vous répondrai sous 48h.';
+            form.reset();
+          }, 900);
+        });
+      })();
+    </script>
+  </section>
+
+  <!-- Pied de page amélioré -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h5>Neema</h5>
+          <p>Front-end Developer créative & passionnée</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/bkgracia_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/neema-banza-614a172a5" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/bk-004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h5>Contact</h5>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:banzakilubaneema@gmail.com">banzakilubaneema@gmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neema — Portfolio. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script mobile menu toggle + theme toggle -->
+  <script>
+    // NAVBAR SCROLL EFFECT 
+    (function(){
+      const header = document.querySelector('.site-header');
+      let lastScrollTop = 0;
+      
+      window.addEventListener('scroll', ()=>{
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop > 50){
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+        lastScrollTop = scrollTop;
+      });
+    })();
+    
+    // THEME TOGGLE (Dark/Light mode) 
+    (function(){
+      const themeToggle = document.getElementById('themeToggle');
+      const html = document.documentElement;
+      const THEME_KEY = 'theme';
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      
+      // Récupérer le thème sauvegardé ou déterminer par préférence système
+      function getInitialTheme(){
+        const saved = localStorage.getItem(THEME_KEY);
+        if(saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
+      }
+      
+      // Appliquer le thème
+      function applyTheme(theme){
+        html.setAttribute('data-theme', theme);
+        localStorage.setItem(THEME_KEY, theme);
+        updateToggleIcon(theme);
+      }
+      
+      // Mettre à jour l'icône du toggle
+      function updateToggleIcon(theme){
+        themeToggle.innerHTML = theme === DARK ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      }
+      
+      // Initialiser le thème
+      const initialTheme = getInitialTheme();
+      applyTheme(initialTheme);
+      
+      // Click sur le toggle
+      themeToggle.addEventListener('click', ()=>{
+        const current = html.getAttribute('data-theme') || LIGHT;
+        const next = current === DARK ? LIGHT : DARK;
+        applyTheme(next);
+      });
+    })();
+    
+    // ===== MOBILE MENU TOGGLE =====
+    (function(){
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('navMenu');
+      const navLinks = navMenu.querySelectorAll('a');
+      
+      // Toggle menu au click du hamburger
+      hamburger.addEventListener('click', ()=>{
+        const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isOpen);
+        navMenu.classList.toggle('active');
+      });
+      
+      // Fermer le menu au click sur un lien
+      navLinks.forEach(link => {
+        link.addEventListener('click', ()=>{
+          hamburger.setAttribute('aria-expanded', 'false');
+          navMenu.classList.remove('active');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
