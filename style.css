@@ -23,7 +23,7 @@ html[data-theme="dark"]{
   --shape-circle-color: rgba(162,55,254,0.15);
 }
 
-/* Light theme - amélioré pour lisibilité et contraste */
+/* Light theme */
 html[data-theme="light"]{
   --bg-1: #faf9ff;
   --bg-2: #f3f0ff;
@@ -188,7 +188,7 @@ body::after{
 
 /* Header */
 .site-header{padding: 0;background:linear-gradient(90deg,var(--purple-1),var(--purple-2));box-shadow:0 4px 12px rgba(10,6,20,0.4);position:sticky;top:0;z-index:100;transition:all .3s ease}
-.site-header.scrolled{background:linear-gradient(90deg,rgba(106,78,244,0.7),rgba(143,108,251,0.7));backdrop-filter:blur(10px);box-shadow:0 2px 8px rgba(10,6,20,0.2)}
+.site-header.scrolled{background:var(--glass);backdrop-filter:blur(10px);box-shadow:0 2px 8px rgba(10,6,20,0.2)}
 .header-flex{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{color:var(--text-primary);font-weight:600;text-decoration:none;font-size:1.2rem}
 .brand .dot{color:var(--accent);font-weight:800}
