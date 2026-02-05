@@ -27,8 +27,8 @@ html[data-theme="dark"]{
 html[data-theme="light"]{
   --bg-1: #faf9ff;
   --bg-2: #f3f0ff;
-  --purple-1: #5e3dc4;
-  --purple-2: #7c56d9;
+  --purple-1: #6246b6;
+  --purple-2: #8c67eb;
   --accent: #a855f7;
   --muted: #6b5b95;
   --card-bg: rgba(94,61,196,0.06);
